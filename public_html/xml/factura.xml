@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<facturas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="factura.xsd">
+  <factura>
+    <consecutivo>1</consecutivo>
+    <fecha>2017-07-25</fecha>
+    <cliente>
+      <nombre>Pedro Ramirez</nombre>
+      <cc_nit>25879634</cc_nit>
+      <tel>3158962314</tel>
+      <dir>Cra 21 8-72</dir>
+      <ciudad>Cota</ciudad>
+    </cliente>
+    <producto>
+      <codigo>123456</codigo>
+      <descripcion>Resma de papel carta</descripcion>
+      <cantidad>2</cantidad>
+      <valor_unidad>8600</valor_unidad>
+      <valor_total>17200</valor_total>
+    </producto>
+  <producto>
+      <codigo>234567</codigo>
+      <descripcion>Marcador Sharpie punta fina</descripcion>
+      <cantidad>4</cantidad>
+      <valor_unidad>2400</valor_unidad>
+      <valor_total>9600</valor_total>
+    </producto>
+  <subtotal>26800</subtotal>
+  <iva>5092</iva>
+  <total>31892</total>
+  <tipo_venta>contado</tipo_venta>
+  </factura>
+<factura>
+    <consecutivo>2</consecutivo>
+    <fecha>2017-07-25</fecha>
+    <cliente>
+      <nombre>Carlos Castro</nombre>
+      <cc_nit>79856213</cc_nit>
+      <tel>3158963312</tel>
+      <dir>Cra 21 8-72</dir>
+      <ciudad>Bogota</ciudad>
+    </cliente>
+    <producto>
+      <codigo>456123</codigo>
+      <descripcion>Borrador de Nata</descripcion>
+      <cantidad>5</cantidad>
+      <valor_unidad>2000</valor_unidad>
+      <valor_total>8000</valor_total>
+    </producto>
+    <producto>
+      <codigo>456789</codigo>
+      <descripcion>Marcador Permanente</descripcion>
+      <cantidad>10</cantidad>
+      <valor_unidad>2600</valor_unidad>
+      <valor_total>26000</valor_total>
+    </producto>
+    <producto>
+      <codigo>456899</codigo>
+      <descripcion>Marcador Borrable</descripcion>
+      <cantidad>10</cantidad>
+      <valor_unidad>2800</valor_unidad>
+      <valor_total>28000</valor_total>
+    </producto>
+  <subtotal>62000</subtotal>
+  <iva>11780</iva>
+  <total>73780</total>
+  <tipo_venta>credito</tipo_venta>
+  </factura>
+<factura>
+    <consecutivo>3</consecutivo>
+    <fecha>2017-07-26</fecha>
+    <cliente>
+      <nombre>Manuel Cardona</nombre>
+      <cc_nit>78627413</cc_nit>
+      <tel>3105647896</tel>
+      <dir>Cra 2 5-19</dir>
+      <ciudad>Mosquera</ciudad>
+    </cliente>
+    <producto>
+      <codigo>123456</codigo>
+      <descripcion>Resma de papel carta</descripcion>
+      <cantidad>3</cantidad>
+      <valor_unidad>8600</valor_unidad>
+      <valor_total>25800</valor_total>
+    </producto>
+    <producto>
+      <codigo>234567</codigo>
+      <descripcion>Marcador Sharpie punta fina</descripcion>
+      <cantidad>2</cantidad>
+      <valor_unidad>2400</valor_unidad>
+      <valor_total>4800</valor_total>
+    </producto>
+    <producto>
+      <codigo>456899</codigo>
+      <descripcion>Marcador Borrable</descripcion>
+      <cantidad>5</cantidad>
+      <valor_unidad>2800</valor_unidad>
+      <valor_total>14000</valor_total>
+     </producto>
+  <subtotal>44600</subtotal>
+  <iva>8474</iva>
+  <total>53074</total>
+  <tipo_venta>contado</tipo_venta>
+  </factura>
+<factura>
+    <consecutivo>4</consecutivo>
+    <fecha>2017-07-27</fecha>
+    <cliente>
+      <nombre>Maria Puentes</nombre>
+      <cc_nit>65789633</cc_nit>
+      <tel>3127894561</tel>
+      <dir>Cra 12 6-15</dir>
+      <ciudad>Bogota</ciudad>
+    </cliente>
+    <producto>
+      <codigo>123457</codigo>
+      <descripcion>Resma de papel oficio</descripcion>
+      <cantidad>2</cantidad>
+      <valor_unidad>9600</valor_unidad>
+      <valor_total>19200</valor_total>
+    </producto>
+    <producto>
+      <codigo>234567</codigo>
+      <descripcion>Marcador Sharpie punta fina</descripcion>
+      <cantidad>2</cantidad>
+      <valor_unidad>2400</valor_unidad>
+      <valor_total>4800</valor_total>
+    </producto>
+  <subtotal>28560</subtotal>
+  <iva>4560</iva>
+  <total>28560</total>
+  <tipo_venta>contado</tipo_venta>
+  </factura>
+<factura>
+    <consecutivo>5</consecutivo>
+    <fecha>2017-07-25</fecha>
+    <cliente>
+      <nombre>Karen Huertas</nombre>
+      <cc_nit>68956123</cc_nit>
+      <tel>3188967894</tel>
+      <dir>Cra 21 2-10</dir>
+      <ciudad>Bogota</ciudad>
+    </cliente>
+    <producto>
+      <codigo>456789</codigo>
+      <descripcion>Marcador Permanente</descripcion>
+      <cantidad>20</cantidad>
+      <valor_unidad>2600</valor_unidad>
+      <valor_total>52000</valor_total>
+    </producto>
+  <subtotal>52000</subtotal>
+  <iva>9880</iva>
+  <total>61880</total>
+  <tipo_venta>contado</tipo_venta>
+  </factura>
+</facturas>

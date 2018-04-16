@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4/12/2017, 08:15:57 PM
+    Author     : Fredy Hernández
+*/
+
+body{
+    font-family: sans-serif, arial;
+    font-size: 120%;
+    background-color: appworkspace;
+}
+
+#main {
+    margin: 0 1%;
+    padding: 0px;
+    
+}
+#titulo{
+    position: relative;
+    float: left;
+    width: 80%;
+   
+}
+#foto{
+    position: relative;
+    float: left;
+     width: 18%;
+    
+}
+#hoja{
+     position: relative;
+     float: left;
+     clear: both;
+     width: 100%;
+}
+img {
+    width: 100%;
+    height: auto;
+
+}
+table{
+   width: 70%;
+   font-size: 120%;
+   margin-left: 30px;
+}
+tr{
+    height: 2.5em;
+}
+p{
+    font-size: 120%;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 40px;
+}

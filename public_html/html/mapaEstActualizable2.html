@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Mapa de Estático</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/mapa.css" type="text/css"/>
+        <script language="JavaScript" SRC="../js/actualizar.js"></script>
+
+    </head>
+    <body>
+        <div>
+
+            <header>
+                <center>
+                    <h1>
+                        Mi Ciudad de Nacimiento
+                    </h1>
+                </center>
+            </header>
+            <section>
+                <center id="imagen">
+                    <img id="image" src="http://maps.googleapis.com/maps/api/staticmap?center=4.190231,-74.8962741&zoom=13&size=640x640&maptype=terrain
+                         &markers=color:blue%7Clabel:F%7C4.222361,-74.902661
+                         &markers=color:orange%7Clabel:F%7C4.2348856,-74.8940931
+                         &markers=color:red%7Clabel:C%7C4.1543766,-74.8878887
+                         &path=color:0x0000ff|weight:5|4.1543766,-74.8878887|4.1534652,-74.8875515|4.1543297,-74.885451|4.1587197,-74.888175|4.1596076,-74.8885342
+                         |4.1607135,-74.8885186|4.1614144,-74.8886747|4.1626294,-74.8894088|4.1631434,-74.8895649|4.1645452,-74.8897211|4.165215,-74.8899241
+                         |4.1681589,-74.8914703|4.171866,-74.8929227|4.1730284,-74.8930729|4.1734173,-74.893203|4.1750659,-74.8939923|4.177585,-74.8948002
+                         |4.1786038,-74.8950416|4.1793169,-74.8954409|4.1821695,-74.897651|4.1844478,-74.8981432|4.1866613,-74.8991926|4.191887,-74.900979
+                         |4.1950542,-74.9015047|4.2095099,-74.8994984|4.2110186,-74.8992195|4.2137257,-74.899198|4.2145924,-74.8993267|4.2152879,-74.8992301
+                         |4.2168929,-74.8988331|4.2200813,-74.8982538|4.2215359,-74.9014097|4.222361,-74.902661
+                         &key=AIzaSyAECaF_XXYcW-PSX7m68KyWbSnBpwkHDn0
+                         ">
+                </center>
+                <p>
+                    Estos son algunos lugares que a costumbro a visitar cuando viajo a mi ciudad de nacimiento (Espinal,Tolima). En la ruta entre la casa de uno de mis famialiares (C) en la ciudad del Espinal y 
+                    la finca de uno de mis familiares (F), se puede apreciar la vegetación tipica de la zona que en su mayoria corresponde a cultivos semestrales.
+                </p>
+                <br>
+                <article>
+                    <label>Sitio:&nbsp&nbsp&nbsp&nbsp&nbsp</label><input type="text" id="sitio" name="sitio" required> <br>
+                    <label>Zoom:&nbsp&nbsp&nbsp</label><input type="number" id="zoom" name="zoom" onkeypress="return justNumbers(event)" required> Digite 1 a 22<br>
+                    <label>Tamaño </label><br>
+                    <label>Ancho:&nbsp&nbsp</label><input type="number" id="ancho" name="ancho" onkeypress="return justNumbers(event)" required> en pixeles<br>
+                    <label>Alto:&nbsp&nbsp&nbsp&nbsp&nbsp</label><input type="number" id="alto" name="alto" onkeypress="return justNumbers(event)" required> en pixeles<br>
+                    <label>Tipo de Mapa:</label>
+                    <select id="tipomapa" name="tipomapa" required>
+                        <option value="roadmap">Mapa Calles</option>
+                        <option value="satellite">Satelital</option>
+                        <option value="Hybrid">Hibrido</option>
+                        <option value="terrain">Terreno</option>
+                    </select><br><br>
+                    <button onclick="actualizarMapa()">Actualizar Mapa</button>   
+                </article>
+                <br>
+                <br>
+                <br>
+            </section>
+
+
+
+
+        </div>
+    </body>
+</html>

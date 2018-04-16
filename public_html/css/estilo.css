@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5/12/2017, 06:55:09 PM
+    Author     : Estudiantes
+*/
+body{
+    font-family: sans-serif, arial;
+    font-size: 120%;
+}
+#main {
+    width: 98%;
+    margin: auto;
+
+}
+header{
+    position: relative;
+    width: 100%;
+    clear: both;
+    background-color: deepskyblue;
+    height: 20%;
+}
+section{
+    position: relative;
+    width: 79%;
+    background-color: appworkspace;
+}
+iframe{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+aside {
+    position: relative;
+    width: 19%;
+    float: right;
+    background-color: orange;
+    padding-left: 1%;
+    height: 800px;
+}
+footer{
+    position: relative;
+    width: 100%;
+    clear: both;
+    background-color: deepskyblue;
+}
+
+#valorletras {
+
+}

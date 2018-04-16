@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<curso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="curso.xsd">
+  <estudiante>
+    <codigo>20171094020</codigo>
+    <nombre>Juan Torres</nombre>
+    <notas>
+      <nota>4.8</nota>
+      <nota>3.9</nota>
+      <nota>4.5</nota>
+    </notas>
+  </estudiante>
+</curso>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ogr:FeatureCollection
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://ogr.maptools.org/ vias.xsd"
+    xmlns:ogr="http://ogr.maptools.org/"
+    xmlns:gml="http://www.opengis.net/gml">
+    <gml:boundedBy>
+        <gml:Box>      
+            <gml:coord>
+                <gml:X>74.07463073730469</gml:X>
+                <gml:Y>4.658127220588554</gml:Y>
+                <gml:Z>0</gml:Z>
+            </gml:coord>
+            <gml:coord>
+                <gml:X>-74.09840583801268,</gml:X>
+                <gml:Y>4.62878392350806</gml:Y>
+                <gml:Z>0</gml:Z>
+            </gml:coord>
+        </gml:Box>
+    </gml:boundedBy>
+                                                        
+    <gml:featureMember>
+        <ogr:vias fid="vias.0">
+            <ogr:geometryProperty>
+                <gml:LineString>
+                    <gml:coordinates>
+                        -74.07885789871216,4.644674796418436,0
+                        -74.0794587135315,4.63697536023932,0
+                        -74.07988786697388,4.631714030576619,0
+                        -74.08008098602295,4.630323835305307,0
+                        -74.08033847808838,4.62919028944673,0
+                        -74.08068180084229,4.628270618830941,0
+                        -74.0813684463501,4.626816253557569,0
+                    </gml:coordinates>
+                </gml:LineString>
+            </ogr:geometryProperty>
+            <ogr:Name>Carrera 30</ogr:Name>
+            <ogr:Alt_Name>NQS</ogr:Alt_Name>
+            <ogr:Description>8 Carriles</ogr:Description>
+            <ogr:Description>60 km/h</ogr:Description>
+            <ogr:Tipo>Troncal</ogr:Tipo>
+            
+        </ogr:vias>
+    </gml:featureMember>
+    <gml:featureMember>
+        <ogr:vias fid="vias.1">
+            <ogr:geometryProperty>
+                <gml:LineString>
+                    <gml:coordinates>
+                        -74.09454345703125,4.639691559812295,0
+                        -74.09250497817993,4.636162637076978,0
+                        -74.0914535522461,4.635264363020425,0
+                        -74.09001588821411,4.634537187947862,0
+                        -74.08883571624756,4.634045274974531,0
+                        -74.08750534057617,4.633510586571777,0
+                        -74.08649682998657,4.633189773336013,0
+                        -74.08538103103638,4.632740634561382,0
+                        -74.08471584320068,4.6323342706623,0
+                        -74.08375024795532,4.631115177563967,0
+                        -74.08278465270996,4.629682205797085,0
+                        -74.08201217651367,4.628548658910604,0
+                        -74.08093929290771,4.6269873555095264,0
+                    </gml:coordinates>
+                </gml:LineString>
+            </ogr:geometryProperty>
+            <ogr:Name>Calle 26</ogr:Name>
+            <ogr:Alt_Name>Avenida El Dorado</ogr:Alt_Name>
+            <ogr:Description>8 Carriles</ogr:Description>
+            <ogr:Description>60 km/h</ogr:Description>
+            <ogr:Tipo>Troncal</ogr:Tipo>
+        </ogr:vias>
+    </gml:featureMember>
+</ogr:FeatureCollection>

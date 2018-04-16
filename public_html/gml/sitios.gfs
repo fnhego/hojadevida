@@ -1,0 +1,27 @@
+<GMLFeatureClassList>
+  <GMLFeatureClass>
+    <Name>sitios</Name>
+    <ElementPath>sitios</ElementPath>
+    <!--POINTZ-->
+    <GeometryType>-2147483647</GeometryType>
+    <DatasetSpecificInfo>
+      <FeatureCount>3</FeatureCount>
+      <ExtentXMin>-74.06578</ExtentXMin>
+      <ExtentXMax>-74.06475</ExtentXMax>
+      <ExtentYMin>4.62824</ExtentYMin>
+      <ExtentYMax>4.63019</ExtentYMax>
+    </DatasetSpecificInfo>
+    <PropertyDefn>
+      <Name>Name</Name>
+      <ElementPath>Name</ElementPath>
+      <Type>String</Type>
+      <Width>25</Width>
+    </PropertyDefn>
+    <PropertyDefn>
+      <Name>Description</Name>
+      <ElementPath>Description</ElementPath>
+      <Type>String</Type>
+      <Width>10</Width>
+    </PropertyDefn>
+  </GMLFeatureClass>
+</GMLFeatureClassList>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="facturas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="factura" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="factura">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="consecutivo" type="xs:string"/>
+        <xs:element name="fecha" type="xs:date"/>
+        <xs:element ref="cliente"/>
+        <xs:element ref="producto" maxOccurs="unbounded"/>
+        <xs:element name="subtotal" type="xs:string"/>
+        <xs:element name="iva" type="xs:string"/>
+        <xs:element name="total" type="xs:string"/>
+        <xs:element name="tipo_venta" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="[a-zA-Z0-9]"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="cc_nit" type="xs:string"/>
+        <xs:element name="tel" type="xs:string"/>
+        <xs:element name="dir" type="xs:string"/>
+        <xs:element name="ciudad" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="producto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="codigo">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="0"/>
+              <xs:maxInclusive value="999999"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="descripcion" type="xs:string"/>
+        <xs:element name="cantidad" type="xs:string"/>
+        <xs:element name="valor_unidad" type="xs:string"/>
+        <xs:element name="valor_total" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

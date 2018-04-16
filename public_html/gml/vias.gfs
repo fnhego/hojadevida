@@ -1,0 +1,32 @@
+<GMLFeatureClassList>
+  <GMLFeatureClass>
+    <Name>vias</Name>
+    <ElementPath>vias</ElementPath>
+    <!--LINESTRINGZ-->
+    <GeometryType>-2147483646</GeometryType>
+    <DatasetSpecificInfo>
+      <FeatureCount>2</FeatureCount>
+      <ExtentXMin>-74.09454</ExtentXMin>
+      <ExtentXMax>-74.07886</ExtentXMax>
+      <ExtentYMin>4.62682</ExtentYMin>
+      <ExtentYMax>4.64467</ExtentYMax>
+    </DatasetSpecificInfo>
+    <PropertyDefn>
+      <Name>Name</Name>
+      <ElementPath>Name</ElementPath>
+      <Type>String</Type>
+      <Width>10</Width>
+    </PropertyDefn>
+    <PropertyDefn>
+      <Name>Description</Name>
+      <ElementPath>Description</ElementPath>
+      <Type>StringList</Type>
+    </PropertyDefn>
+    <PropertyDefn>
+      <Name>Tipo</Name>
+      <ElementPath>Tipo</ElementPath>
+      <Type>String</Type>
+      <Width>7</Width>
+    </PropertyDefn>
+  </GMLFeatureClass>
+</GMLFeatureClassList>

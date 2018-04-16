@@ -1,0 +1,122 @@
++
+6<!DOCTYPE html>
+<!--
+Proyecto: Complete Cargo
+File: 
+Programador: Ing. Fredy Hernández
+Fecha: $date
+-->
+<html>
+    <head>
+        <title>Pagare</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/pagare.css" type="text/css"/>
+
+
+        <script>
+            var o = new Array("diez", "once", "doce", "trece", "catorce", "quince", "dieciséis", "diecisiete", "dieciocho", "diecinueve", "veinte", "veintiuno", "veintidós", "veintitrés", "veinticuatro", "veinticinco", "veintiséis", "veintisiete", "veintiocho", "veintinueve");
+            var u = new Array("cero", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve");
+            var d = new Array("", "", "", "treinta", "cuarenta", "cincuenta", "sesenta", "setenta", "ochenta", "noventa");
+            var c = new Array("", "ciento", "doscientos", "trescientos", "cuatrocientos", "quinientos", "seiscientos", "setecientos", "ochocientos", "novecientos");
+
+            function nn()
+            {
+                n = document.getElementById("numero").value;
+                //se limita a dos decimales, toFixed() :)/
+                var n = parseFloat(n).toFixed(2);
+                //decimales/
+                var p = n.toString().substring(n.toString().indexOf(".") + 1);
+                //número sin decimales/
+                var m = n.toString().substring(0, n.toString().indexOf("."));
+                //tampoco que reverse() existía :D/
+                var m = parseFloat(m).toString().split("").reverse();
+                //Inicia t vacio
+                var t = "";
+
+                //Se analiza cada 3 dígitos/
+                for (var i = 0; i < m.length; i += 3)
+                {
+                    var x = t;
+                    //formamos un número de 2 dígitos/
+                    var b = m[i + 1] !== undefined ? parseFloat(m[i + 1].toString() + m[i].toString()) : parseFloat(m[i].toString());
+                    //analizamos el 3 dígito/
+                    t = m[i + 2] !== undefined ? (c[m[i + 2]] + " ") : "";
+                    t += b < 10 ? u[b] : (b < 30 ? o[b - 10] : (d[m[i + 1]] + (m[i] === '0' ? "" : (" y " + u[m[i]]))));
+                    t = t === "ciento cero" ? " cien" : t;
+                    if (2 < i && i < 6)
+                        t = t === "uno" ? "mil " : (t.replace("uno", "un") + " mil");
+                    if (5 < i && i < 9)
+                        t = t === "uno" ? "un millón " : (t.replace("uno", "un") + " millones");
+                    if (8 < i && i < 12)
+                        t = t === "uno" ? "un mil " : (t.replace("uno", "un") + " mil");
+                    if (11 < i && i < 15)
+                        t = t === "uno" ? "un billon " : (t.replace("uno", "un") + " billones");
+                    t += x;
+                    //t=i<3?t:(i<6?((t=="uno"?"mil ":(t+" mil "))+x):((t=="uno"?"un millón ":(t+" millones "))+x));
+                }
+
+
+                t += " pesos con " + p + " Centavos";
+                //correcciones/
+                if (m.length < 9) {
+                    t = t.replace(" cero millones", " ");
+                    t = t.replace(" cero mil", " ");
+                    t = t.replace(" cero", " ");
+
+                } else if (m.length < 15) {
+                    t = t.replace(" cero millones", " ");
+                    t = t.replace(" cero mil", " ");
+                    t = t.replace(" cero", " ");
+
+                }
+
+                //t=t.replace("ciento y","cien y");
+                //alert("Numero: "+n+"\nNº Dígitos: "+m.length+"\nDígitos: "+m+"\nDecimales: "+p+"\nt: "+t);
+                //document.getElementById("esc").value=t;
+                return t;
+            }
+
+            function st()
+            {
+                var t = nn(numero);
+                document.getElementById('valorletras').innerHTML = t + " M/cte";
+            }
+            function justNumbers(e)
+            {
+                var keynum = window.event ? window.event.keyCode : e.which;
+                if ((keynum === 8) || (keynum === 46))
+                    return true;
+
+                return /\d/.test(String.fromCharCode(keynum));
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <header>
+                <center>
+                    <h1>
+                        Pagare 
+                    </h1>
+                </center>
+            </header>
+            <form>
+                Por este pagare yo , prometo pagar incondicionalmente a la orden de 
+                Fredy Hernández la cantidad de $
+                <input type="number" id="numero" name="numero" 
+                       onkeypress="return justNumbers(event);"> 
+                (<h3 id="valorletras">
+
+                </h3>
+                ) el dia 30 de diciembre.
+            </form>
+            <script>
+                var numero = document.getElementById("numero");
+
+
+                numero.onchange = st;
+            </script>
+        </div>
+    </body>
+</html>

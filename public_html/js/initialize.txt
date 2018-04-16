@@ -1,0 +1,8 @@
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(4,-74),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("mapa"),mapProp);
+}

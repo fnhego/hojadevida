@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Folder>
+        <Placemark>
+            <name>Universidad Nacional</name>
+            <description>
+                Plantel Educativo
+            </description>
+            <Point>
+                <coordinates>-74.0833854675293,4.636568998775015,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Estadio Nemesio Camacho</name>
+            <description>
+                Recreativo
+            </description>
+            <Point>
+                <coordinates>-74.07746315002441,4.64589386610884,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Coliseo Cubierto El Campin</name>
+            <description>
+                Recreativo
+            </description>
+            <Point>
+                <coordinates>-74.07729148864746,4.6492302565866686,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Hemeroteca Nacional</name>
+            <description>
+                Cultural
+            </description>
+            <Point>
+                <coordinates>-74.09115314483641,4.636665242300836,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Parque El Lago</name>
+            <description>
+                Recreativo
+            </description>
+            <Point>
+                <coordinates>-74.08207654953003,4.654566309793053,0</coordinates>
+            </Point>
+        </Placemark>
+    </Folder>
+</kml>

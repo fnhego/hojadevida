@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Placemark>
+    <name>Universidad Gran Colombia</name>
+    <description>
+		Educativo
+    </description>
+    <Point>
+      <coordinates>-74.065781,4.630186,0</coordinates>
+    </Point>
+  </Placemark>
+</kml>

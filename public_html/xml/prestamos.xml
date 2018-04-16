@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prestamos>
+  <prestamo>
+    <consecutivo>1</consecutivo>
+    <libro>
+      <ISBN>1254637</ISBN>
+      <nombre_libro>El Quijote</nombre_libro>
+      <editorial>Omega</editorial>
+      <año_publicacion>2000</año_publicacion>
+    </libro>
+    <ejemplar>21</ejemplar>
+    <socio>
+      <id>65804627</id>
+      <nombre>Raul Mantilla</nombre>
+      <dirección>Cra. 21 53-60</dirección>
+      <ciudad>Bogotá</ciudad>
+    </socio>
+    <fecha>25-09-2017</fecha>
+    </prestamo>
+<prestamo>
+    <consecutivo>2</consecutivo>
+    <libro>
+      <ISBN>5687957</ISBN>
+      <nombre_libro>La Maria</nombre_libro>
+      <editorial>Publicar</editorial>
+      <año_publicacion>2005</año_publicacion>
+    </libro>
+    <ejemplar>02</ejemplar>
+    <socio>
+      <id>54789623</id>
+      <nombre>Carlos Castro</nombre>
+      <dirección>Cra. 69 25-30</dirección>
+      <ciudad>Bogotá</ciudad>
+    </socio>
+    <fecha>26-09-2017</fecha>
+    </prestamo>
+<prestamo>
+    <consecutivo>3</consecutivo>
+    <libro>
+      <ISBN>1254636</ISBN>
+      <nombre_libro>El Principito</nombre_libro>
+      <editorial>Alfa</editorial>
+      <año_publicacion>2010</año_publicacion>
+    </libro>
+    <ejemplar>09</ejemplar>
+    <socio>
+      <id>56789123</id>
+      <nombre>Pedro Contreras</nombre>
+      <dirección>Calle 63 85-49</dirección>
+      <ciudad>Bogotá</ciudad>
+    </socio>
+    <fecha>24-09-2017</fecha>
+    </prestamo>
+<prestamo>
+    <consecutivo>4</consecutivo>
+    <libro>
+      <ISBN>1254537</ISBN>
+      <nombre_libro>El Mio Cid</nombre_libro>
+      <editorial>Iberia</editorial>
+      <año_publicacion>1980</año_publicacion>
+    </libro>
+    <ejemplar>15</ejemplar>
+    <socio>
+      <id>45896123</id>
+      <nombre>Angela Ruiz</nombre>
+      <dirección>Calle 14. 75-22</dirección>
+      <ciudad>Mosquera</ciudad>
+    </socio>
+    <fecha>27-09-2017</fecha>
+    </prestamo>
+<prestamo>
+    <consecutivo>5</consecutivo>
+    <libro>
+      <ISBN>1255637</ISBN>
+      <nombre_libro>El Marciano</nombre_libro>
+      <editorial>Carvajal</editorial>
+      <año_publicacion>2015</año_publicacion>
+    </libro>
+    <ejemplar>06</ejemplar>
+    <socio>
+      <id>89512345</id>
+      <nombre>Saul Castro</nombre>
+      <dirección>Cra. 2 5-09</dirección>
+      <ciudad>Cota</ciudad>
+    </socio>
+    <fecha>29-09-2017</fecha>
+    </prestamo>
+</prestamos>
